@@ -26,6 +26,7 @@ Adivinar una palabra secreta letra por letra antes de que se complete el dibujo 
 #Requisitos
 •	Python 3.x
 •	No se requieren librerías externas (solo tkinter, que viene con Python)
+
  #Cómo ejecutar
 •	python ahorcado.py
 •	Asegúrate de tener el archivo guardado con extensión .py y que Python esté instalado correctamente.
