@@ -1,4 +1,19 @@
 # JUEGO-DE-AHORCADO
+
+🧩 Explicación Breve del Diagrama de Flujo
+- Inicio
+Se elige una palabra secreta aleatoria y se inicializa el estado del juego (intentos, letras adivinadas).
+- Mostrar palabra oculta
+Se muestra la palabra con guiones bajos, actualizándose conforme el jugador acierta letras.
+- Ingreso de letra
+El jugador escribe una letra y el programa valida si es correcta y si ya fue usada.
+- Verificación
+Si la letra está en la palabra, se actualiza la visualización. Si no, se incrementan los intentos y se dibuja el ahorcado.
+- Condiciones de fin
+Se verifica si el jugador ganó (adivinó todas las letras) o perdió (superó los 6 intentos).
+- Fin o reinicio
+Se muestra el resultado y se ofrece reiniciar el juego.
+
 🎯 Objetivo
 Desarrollar un juego interactivo del ahorcado que permita aplicar conceptos clave de programación como estructuras de datos, lógica condicional, eventos gráficos y validación de entrada. El proyecto busca integrar los contenidos de las 4 unidades del curso, con un enfoque educativo y técnico.
 
