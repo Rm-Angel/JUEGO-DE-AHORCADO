@@ -1,40 +1,33 @@
 # JUEGO-DE-AHORCADO
-Adivinar una palabra secreta letra por letra antes de que se complete el dibujo de un ahorcado. Cada error acerca al jugador a perder la partida.
+🎯 Objetivo
+Desarrollar un juego interactivo del ahorcado que permita aplicar conceptos clave de programación como estructuras de datos, lógica condicional, eventos gráficos y validación de entrada. El proyecto busca integrar los contenidos de las 4 unidades del curso, con un enfoque educativo y técnico.
 
-#Características
-•	Interfaz gráfica amigable con tkinter
-•	Dibujo progresivo del muñeco en cada fallo
-•	Validación de letras y control de intentos
-•	Botón para reiniciar el juego
-•	Palabras aleatorias seleccionadas al inicio
+🧠 Tecnologías utilizadas
+- Python 3
+- Tkinter (interfaz gráfica)
+- Estructuras de datos: listas, tuplas y diccionarios
+- Programación orientada a objetos
+- Programación funcional (uso de funciones lambda)
 
-#Vista previa
-#La interfaz incluye:
-•	Un área de dibujo (Canvas) donde se forma el muñeco
-•	Un campo de entrada para letras
-•	Mensajes de aciertos, errores y estado del juego
-•	Contador de intentos
-•	Botón para reiniciar la partida
+🧱 Estructura del Código
+El juego está encapsulado en una clase AhorcadoApp que gestiona la interfaz y la lógica del juego. Se implementaron las siguientes mejoras:
+- Tupla para representar la palabra secreta (inmutable)
+- Lista para almacenar letras adivinadas
+- Diccionario para manejar el estado completo del juego (estado_juego)
+- Funciones lambda para dibujar partes del ahorcado de forma modular
 
-#Lógica del juego
-•	Se elige una palabra secreta aleatoria de una lista
-•	El jugador ingresa letras una por una
-•	Si la letra está en la palabra, se revela en pantalla
-•	Si no está, se dibuja una parte del muñeco (cabeza, cuerpo, brazos, piernas)
-•	El juego termina cuando se completa la palabra o se alcanzan 6 errores
+🖥️ Funcionalidades
+- Selección aleatoria de palabra secreta
+- Visualización de letras adivinadas y guiones bajos
+- Validación de entrada (solo letras, sin repetir)
+- Dibujo progresivo del ahorcado en cada fallo
+- Mensajes de victoria o derrota
+- Botón para reiniciar el juego
 
-#Requisitos
-•	Python 3.x
-•	No se requieren librerías externas (solo tkinter, que viene con Python)
+📷 Interfaz Gráfica
+El juego utiliza tkinter para mostrar:
+- Canvas para dibujar el ahorcado
+- Labels para mostrar la palabra, mensajes y contador de intentos
+- Entry para ingresar letras
+- Botones para adivinar y reiniciar
 
- #Cómo ejecutar
-•	python ahorcado.py
-•	Asegúrate de tener el archivo guardado con extensión .py y que Python esté instalado correctamente.
-
- #Estructura del código
-•	AhorcadoApp: clase principal que gestiona la interfaz y la lógica
-•	dibujar_base(): dibuja la estructura de la horca
-•	dibujar_ahorcado(): dibuja partes del muñeco según los errores
-•	actualizar_palabra(): muestra el progreso de la palabra
-•	adivinar(): procesa la letra ingresada
-•	reiniciar(): reinicia el juego con una nueva palabra
